@@ -10,17 +10,17 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("/fruit")
-public class FruitResource {
+@Path("/places")
+public class PlacesResource {
     
     @GET
     @Produces(MediaType.APPLICATION_JSON) 
     @Timed
-    public List<Fruit> getFruits(@QueryParam("season") String season) {
-        if (season != null ) {
-            return Fruit.findBySeason(season);
+    public List<Place> getPlaces(@QueryParam("month") String month) {
+        if (month != null ) {
+            return Place.findByMonth(month);
         }
-        Log.info("Listing all fruits");
-        return Fruit.listAll();
+        Log.info("Listing all places");
+        return Place.listAll();
     }
 }
