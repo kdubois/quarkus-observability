@@ -12,4 +12,10 @@ VALUES
 (10, 'Rome', 'Italy', 'November'),
 (11, 'Darmstadt', 'Germany', 'November'),
 (12, 'Tokyo', 'Japan', 'December'),
-(13, 'Singapore', 'Singapore', 'December');
+(13, 'Singapore', 'Singapore', 'December'),
+(14, 'Stockholm', 'Sweden', 'February'),
+(15, 'Amsterdam', 'Netherlands', 'February'),
+(16, 'Los Angeles', 'USA', 'March'),
+(17, 'Paris', 'France', 'March'),
+(18, 'Atlanta', 'USA', 'April'),
+(19, 'Bangalore', 'India', 'April');
