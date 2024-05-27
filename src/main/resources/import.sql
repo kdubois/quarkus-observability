@@ -18,4 +18,7 @@ VALUES
 (16, 'Los Angeles', 'USA', 'March'),
 (17, 'Paris', 'France', 'March'),
 (18, 'Atlanta', 'USA', 'April'),
-(19, 'Bangalore', 'India', 'April');
+(19, 'Bangalore', 'India', 'April'),
+(20, 'Denver', 'USA', 'May'),
+(21, 'Sofia', 'Bulgaria', 'May'),
+(22, 'Bucharest', 'Romania', 'May');
