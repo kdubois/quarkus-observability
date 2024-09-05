@@ -16,5 +16,7 @@ services:
     image: docker.io/library/postgres:14
     environment:
       - POSTGRES_DB=quarkus
-      - POSTGRES_USERNAME=quarkus
+      - POSTGRES_USER=quarkus
       - POSTGRES_PASSWORD=quarkus
+    ports: 
+      - "5432:5432"

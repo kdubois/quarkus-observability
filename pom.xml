@@ -1,6 +1,5 @@
-<?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.developers</groupId>
   <artifactId>demo-app</artifactId>
@@ -12,9 +11,10 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.11.3</quarkus.platform.version>
+    <quarkus.platform.version>3.13.3</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.2.5</surefire-plugin.version>
+    <micrometer-otlp.version>3.2.4</micrometer-otlp.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -56,14 +56,16 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-opentelemetry</artifactId>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-micrometer</artifactId>
+      <artifactId>quarkus-observability-devservices-lgtm</artifactId>
+      <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
-    </dependency>
+      <groupId>io.quarkiverse.micrometer.registry</groupId>
+      <artifactId>quarkus-micrometer-registry-otlp</artifactId>
+      <version>${micrometer-otlp.version}</version>
+    </dependency> -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-kubernetes</artifactId>
@@ -75,6 +77,10 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-micrometer</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>

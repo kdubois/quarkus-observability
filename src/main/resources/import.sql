@@ -21,4 +21,10 @@ VALUES
 (19, 'Bangalore', 'India', 'April'),
 (20, 'Denver', 'USA', 'May'),
 (21, 'Sofia', 'Bulgaria', 'May'),
-(22, 'Bucharest', 'Romania', 'May');
+(22, 'Bucharest', 'Romania', 'May'),
+(23, 'Lille', 'France', 'June'),
+(24, 'Nice', 'France', 'July'),
+(25, 'Berlin', 'Germany', 'July'),
+(26, 'Oslo', 'Norway', 'September');
+
+ALTER SEQUENCE place_seq RESTART WITH 27;
