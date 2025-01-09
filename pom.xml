@@ -11,7 +11,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.13.3</quarkus.platform.version>
+    <quarkus.platform.version>3.17.6</quarkus.platform.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.2.5</surefire-plugin.version>
     <micrometer-otlp.version>3.2.4</micrometer-otlp.version>
@@ -56,7 +56,7 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-opentelemetry</artifactId>
     </dependency>
-    <!-- <dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-observability-devservices-lgtm</artifactId>
       <scope>provided</scope>
@@ -65,7 +65,7 @@
       <groupId>io.quarkiverse.micrometer.registry</groupId>
       <artifactId>quarkus-micrometer-registry-otlp</artifactId>
       <version>${micrometer-otlp.version}</version>
-    </dependency> -->
+    </dependency> 
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-kubernetes</artifactId>
